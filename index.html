@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Oldify</title>
+    <!--Boostrap's CSS-->
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container" id="page-container">
+        <h1 id="app-name">
+            <span class="glyphicon glyphicon-globe"></span> GoWeather
+        </h1>
+        <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
+
+        <h2 id="page-header">
+            Get accurate weather updates, wherever you are. 
+            <img id = "myImage" src="http://openweathermap.org/img/w/10d.png" alt="weather emoji" >
+        </h2>
+
+        <div id="search-bar-padding">
+
+            <input type="text" id="city" />
+            <button type="button" class="btn btn-info" value="submit" id="submitCity" />
+            <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+
+        </div>
+        <!--<img id = "selected-img" src="">-->
+        <h3>    Weather Searches    </h3>
+        <ul id="weather"></ul>
+
+        <!--jQuery Script-->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <!--Custom Script-->
+        <script src="./js/basic.js"></script>
+
+</body>
+
+</html>
